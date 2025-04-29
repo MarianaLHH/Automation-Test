@@ -21,11 +21,26 @@ public class S01Locators {
         //WebElement searchInput= driver.findElement(By.name("q"));
 
         //SEGUNDA MANERA:  Localizando el campopara buscar en este caso por su  xpath
-        WebElement searchInput= driver.findElement(By.xpath("//*[@id=\"APjFqb\"]"));
+        //WebElement searchInput= driver.findElement(By.xpath("//*[@id=\"APjFqb\"]"));
+
+        //TERCERA  MANERA:  Localizando el campo para buscar en este caso por CSS SELECTOR
+        //WebElement searchInput= driver.findElement(By.cssSelector("#APjFqb"));
+
+        //CUARTA  MANERA:  Localizando el campo para buscar en este caso por By.ID
+        //WebElement searchInput= driver.findElement(By.id("APjFqb"));
+
+        //QUINTA  MANERA:  Localizando el campo para buscar en este caso por la clase
+        WebElement searchInput= driver.findElement(By.className("gLFyfS"));
+
         //Escribir un texto para buscar
         searchInput.sendKeys("Historia de Bolivia"); //metodo->sendkeys
         //Presionar Enter
         searchInput.submit();
+
+        //RECOMENDACION BUSCAR EN ESE ORDEN
+        //1.- Primero buscar por ID
+        //2.- localizar por name
+        //3.-Localizar por xpath
 
     }
 }
