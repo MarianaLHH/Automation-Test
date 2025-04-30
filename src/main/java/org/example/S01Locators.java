@@ -19,7 +19,6 @@ public class S01Locators {
 
         //PRIMERA MANERA :Localizando el campopara buscar en este caso por su  name
         //WebElement searchInput= driver.findElement(By.name("q"));
-
         //SEGUNDA MANERA:  Localizando el campopara buscar en este caso por su  xpath
         //WebElement searchInput= driver.findElement(By.xpath("//*[@id=\"APjFqb\"]"));
 
